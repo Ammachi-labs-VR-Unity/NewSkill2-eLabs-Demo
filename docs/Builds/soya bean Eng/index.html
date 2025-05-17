@@ -155,11 +155,11 @@
 
     var buildUrl = "Build";
     var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/soya bean.loader.js";
+      var loaderUrl = buildUrl + "/So.loader.js";
       var config = {
-        dataUrl: buildUrl + "/soya bean.data.unityweb",
-        frameworkUrl: buildUrl + "/soya bean.framework.js.unityweb",
-        codeUrl: buildUrl + "/soya bean.wasm.unityweb",
+        dataUrl: buildUrl + "/So.data.unityweb",
+        frameworkUrl: buildUrl + "/So.framework.js.unityweb",
+        codeUrl: buildUrl + "/So.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "AmmachilLabs",
         productName: "soybean",
@@ -183,7 +183,7 @@
       }).then((instance) => {
 	  	container.style.backgroundColor = "black";
         unityInstance = instance;
-        unityInstance.SendMessage('LanguageToggleButton', 'ToggleLanguageByHtml', 0);
+        unityInstance.SendMessage('LanguageToggleButton', 'ToggleLanguageByHtml', 1);
         loadingBar.style.display = "none";
         if (!hasShownInitialNote && !isIOS) {  // Only show initial note if not on iOS
           hasShownInitialNote = true;
